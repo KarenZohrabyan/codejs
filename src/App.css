@@ -1,0 +1,249 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.App {
+  max-width: 1280px;
+  text-align: center;
+  display: flex;
+  font-size: 18px;
+  margin-left: 414px;
+  margin-right: 414px;
+  margin-top: 60px;
+  margin-bottom: 120px;
+}
+
+.nav-bar {
+  min-width: 340px;
+}
+
+.sticky {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.navSupport {
+  font-family: ProximaNova;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  color: #3c3c47;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.meetingRoom {
+  width: 239px;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.28;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3b77a5;
+  text-align: left;
+}
+
+.mainNav {
+  color: #3b77a5 !important;
+}
+
+.nav-bar-ul li {
+  width: 216px;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  text-align: left;
+  margin: 16px 0px 16px 24px;
+  color: #5c6060;
+  text-underline-position: initial;
+}
+
+
+.main {
+  text-align: left;
+  max-width: 664px;
+  z-index: 1;
+}
+
+.supportGuide {
+  font-family: Grad;
+  font-size: 36px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: 0.18px;
+  text-align: left;
+  color: #3c3c47;
+}
+
+.LModify {
+  margin: 12px 0px 48px 0px;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.28;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5c6060;
+}
+
+.SetUpMeetingRooms {
+  margin-bottom: 24px;
+  font-family: Grad;
+  font-size: 26px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.31;
+  letter-spacing: 0.26px;
+  text-align: left;
+  color: #3c3c47;
+}
+
+.AddMeetingRooms {
+  margin-bottom: 5px;
+  font-size: 22px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3c3c47;
+}
+
+.usesInfo {
+  margin-bottom: 32px;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.28;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5c6060;
+}
+
+.strongMenu {
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.28;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3c3c47;
+
+  margin: 32px 0px 9px 0px;
+}
+
+ol li {
+  margin: 24px 0px 24px 39px;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.28;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5c6060;
+}
+
+.toDo{
+  margin: 9px 0px 32px 0px;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.28;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5c6060;
+}
+
+.connectTo {
+  margin: 48px 0px 5px 0px;
+  font-size: 22px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3c3c47;
+}
+
+.setupOffice {
+  margin: 48px 0px 24px 0px;
+  font-family: Grad;
+  font-size: 26px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.31;
+  letter-spacing: 0.26px;
+  text-align: left;
+  color: #3c3c47;
+}
+
+.firstNOTE {
+  margin-bottom: 24px;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.28;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5c6060;
+}
+
+.deviationStyle {
+  margin-bottom: 48px;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  line-height: 1.28;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5c6060;
+}
+
+.addABuilding {
+  width: 670px;
+}
+
+.olImages {
+  margin-left: 39px;
+}
+
+a:link {
+  color: #5c6060;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #5c6060;
+}
+
+.roomGroups{
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  text-align: left;
+  margin: 16px 0px 16px 24px;
+  color: #5c6060;
+}
