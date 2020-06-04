@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -16,6 +20,22 @@
 
 .nav-bar {
   min-width: 340px;
+  position: fixed;
+  height: 90%;
+  overflow-y: hidden;
+}
+
+
+
+.nav-bar-item {
+  font-size: 30px;
+  position: relative;
+}
+
+
+
+.nav-bar:hover {
+  overflow: auto;
 }
 
 .sticky {
@@ -70,6 +90,8 @@
 .main {
   text-align: left;
   max-width: 664px;
+  position: relative;
+  margin-left: 360px;
   z-index: 1;
 }
 
@@ -247,3 +269,163 @@ a:visited {
   margin: 16px 0px 16px 24px;
   color: #5c6060;
 }
+
+
+
+@media (max-width: 375px) {
+
+  * {
+    font-size: 9px;
+  }
+
+  .App {
+    width: 375px;
+
+    max-width: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .nav-bar {
+
+    font-size: 12px;
+    top: 0;
+    height: 120%;
+    margin-top: 50px;
+    margin-left: 24px;
+    margin-right: 24px;
+    min-width: 0;
+    width: 327px;
+    position: absolute;
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .nav-bar:hover {
+    overflow: hidden;
+  }
+
+
+  .nav-bar-ul li {
+    font-weight: 12px;
+    line-height: 1;
+    margin: 8px 0px 8px 16px;
+    color: #5c6060;
+    text-underline-position: initial;
+  }
+
+
+
+  .main {
+    padding-left: 8px;
+    width: 327px;
+    min-width: 327px;
+    margin-top: 760px;
+
+    text-align: center;
+    position: absolute;
+    max-width: 0;
+    margin-left: 24px;
+  }
+
+  img {
+    width: 270px;
+  }
+
+  .addABuilding {
+    width: 270px;
+  }
+
+
+  .supportGuide {
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0.18px;
+  }
+
+  .LModify {
+    margin: 12px 0px 48px 0px;
+    font-size: 10px;
+    line-height: 1;
+  }
+
+
+  .SetUpMeetingRooms {
+    margin-bottom: 24px;
+    font-size: 14px;
+    line-height: 1.31;
+  }
+
+
+  .AddMeetingRooms {
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: 8px;
+    line-height: 1;
+  }
+
+  .usesInfo {
+    margin-bottom: 32px;
+    font-size: 12px;
+    line-height: 1;
+  }
+
+  .strongMenu {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+  
+    margin: 24px 0px 9px 0px;
+  }
+
+
+  ol li {
+    margin: 24px 0px 24px 39px;
+    font-size: 12px;
+    line-height: 1;
+  }
+  
+  .toDo{
+    margin: 9px 0px 32px 0px;
+    font-size: 12px;
+    line-height: 1.28;
+  }
+  
+  .connectTo {
+    margin: 48px 0px 5px 0px;
+    font-size: 14px;
+    font-weight: 8;
+    line-height: 1.23;
+  }
+  
+  .setupOffice {
+    margin: 48px 0px 24px 0px;
+    font-size: 16px;
+    line-height: 1.31;
+  }
+  
+  .firstNOTE {
+    margin-bottom: 24px;
+    font-size: 12px;
+    line-height: 1.28;
+  }
+  
+  .deviationStyle {
+    margin-bottom: 48px;
+    font-size: 12px;
+    line-height: 1.28;
+  }
+  
+  .olImages {
+    margin-left: 13px;
+  }
+  
+  .roomGroups{
+    font-size: 12px;
+    line-height: 1.19;
+    margin: 16px 0px 16px 24px;
+  }
+}
+
