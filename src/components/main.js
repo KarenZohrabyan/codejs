@@ -314,8 +314,8 @@ function Main() {
             </div>
 
 
-            <div className="navigation">
-                <h3 className="connectTo" id="digitalSignage">Digital signage</h3>
+            <div className="navigation" id="digitalSignage">
+                <h3 className="connectTo" >Digital signage</h3>
                 <p className="toDo">
                     Alongside room status and room reservation features, Communify Meet provides a digital signage endpoint at each Meet calendar 
                     hall display. Organizations can share global and targeted messaging to show employees relevant content where they’re most likely to see it. 
@@ -561,8 +561,8 @@ function Main() {
             </div>
 
 
-            <div className="navigation">
-            <h3 className="connectTo" id="schMeetings">Scheduling Meetings  </h3>
+            <div className="navigation" id="schMeetings">
+            <h3 className="connectTo" >Scheduling Meetings  </h3>
                 <p className="toDo">
                     Communify Meet allows you to reserve rooms quickly and easily.           
                 </p>
@@ -612,13 +612,13 @@ function Main() {
 
             <div className="navigation" id="contactInfo">
                 <h2 className="connectTo"  style={{marginBottom: 16}}>Contact information  </h2>
-                <div>
-                    <h3 className="strongMenu" style={{marginBottom: 9}} id="supportF">Support  </h3>
+                <div id="supportF">
+                    <h3 className="strongMenu navigation" style={{marginBottom: 9}} >Support  </h3>
                     <a href="https://www.google.ru/" className="mainNav">support@communifyapp.com </a>
                 </div>
 
-                <div>
-                    <h3 className="strongMenu" style={{marginBottom: 9}} id="salesInq">Sales Inquiries</h3>
+                <div  id="salesInq">
+                    <h3 className="strongMenu navigation" style={{marginBottom: 9}} >Sales Inquiries</h3>
                     <a href="https://www.google.ru/" className="mainNav">sales@communifyapp.com </a>
                 </div>
             </div>

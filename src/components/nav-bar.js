@@ -8,39 +8,34 @@ import React, {useEffect, useState} from 'react';
 
 function NavBar() {
 
-    // const [count, setCount] = useState(0)
-
-    // useEffect(() => {
-    //     document.querySelectorAll(".navigation").forEach(vram => {
-    //         if(vram.offsetTop === 0) {
-    //             vram.classList.add("nav-bar-item")
-    //         }
-    //     })
-    // }, [])
-
     const [offset, setOffset] = useState(0);
 
     useEffect(() => {
-      window.onscroll = () => {
-        setOffset(window.pageYOffset)
-        document.querySelectorAll(".navigation").forEach(vram => {
-                if(vram.offsetTop < 1  && vram.offsetTop > -100000) {
-                    //console.log(vram.offsetTop)
-                    document.querySelectorAll("a").forEach(vram_2 => {
-                        console.log(vram_2.href, vram.id, vram_2.href.includes(vram.id))
-                        if(vram_2.href.includes(vram.id)) {
-                            //console.log(vram_2.href)
-                            vram_2.classList.add("nav-bar-item")
-                            
+        window.onscroll = () => {
+            setOffset(window.pageYOffset)
+            document.querySelectorAll(".navigation").forEach(helper => {
+            if (helper.getBoundingClientRect().y <= 1) {
+                    document.querySelectorAll("a").forEach(helper_2 => {
+                        if (helper_2.href.includes(helper.id)) {
+                            document.querySelectorAll(".nav-bar-item").forEach(el => {
+                                el.classList.remove("nav-bar-item")
+                            })
+                            helper_2.classList.add("nav-bar-item")
                         }
                     })
-                    //console.log(vram.id)
-                    // vram.classList.add("nav-bar-item")
-                    
                 }
             })
-      }
-    }, []);
+        }
+    }, [offset]);
+
+
+    const helper_1 = (e) => {
+        document.querySelectorAll(".nav-bar-item").forEach(el => {
+            el.classList.remove("nav-bar-item")
+        })
+        e.target.classList.add("nav-bar-item")
+    }
+    
   
     //console.log(offset); 
 
@@ -79,9 +74,9 @@ function NavBar() {
                 <li> <a href="#viewEndMeetings" >View & End Meetings</a></li>
             </ul>
 
-            <ul style={{listStyleType:"none"}} className="nav-bar-ul"> <p className="meetingRoom"> <a href="#contactInfo" className="mainNav">Contact information</a> </p>
-                <li> <a href="#supportF" >Support</a></li>
-                <li> <a href="#salesInq" >Sales Inquiries</a></li>
+            <ul style={{listStyleType:"none"}} className="nav-bar-ul"> <p className="meetingRoom"> <a href="#contactInfo" className="mainNav" onClick={(e) => {helper_1(e)}}>Contact information</a> </p>
+                <li> <a href="#supportF" onClick={(e) => {helper_1(e)}}>Support</a></li>
+                <li> <a href="#salesInq" onClick={(e) => {helper_1(e)}}>Sales Inquiries</a></li>
             </ul>
         </div>
     )

@@ -28,7 +28,7 @@ html {
 
 
 .nav-bar-item {
-  font-size: 30px;
+  font-weight: 800;
   position: relative;
 }
 
@@ -58,7 +58,6 @@ html {
 .meetingRoom {
   width: 239px;
   font-size: 18px;
-  font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.28;
